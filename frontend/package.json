@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "a front-end part of the async-race project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rs-school",
+    "race",
+    "cars",
+    "api"
+  ],
+  "author": "Dmytro Malenik",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "2.8.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.6.0"
+  }
+}
