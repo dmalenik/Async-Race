@@ -1,0 +1,63 @@
+.d-hidden {
+    display: none;
+}
+
+.d-shown {
+    display: block;
+}
+
+.f-row {
+    display: flex;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-x-center {
+    justify-content: center;
+}
+
+.f-y-center {
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.p-25px {
+    padding: 25px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.nobullets {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.t-center {
+    text-align: center;
+}
