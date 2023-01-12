@@ -30,4 +30,4 @@ const setWinners = () => {
     return winners
 }
 
-export default setWinners
+export { setWinners }

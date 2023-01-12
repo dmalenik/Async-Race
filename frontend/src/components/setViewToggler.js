@@ -27,4 +27,4 @@ const setViewToggler = () => {
     return toggler
 }
 
-export default setViewToggler
+export { setViewToggler }

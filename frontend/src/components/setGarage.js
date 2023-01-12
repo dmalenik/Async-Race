@@ -30,4 +30,4 @@ const setGarage = () => {
     return garage
 }
 
-export default setGarage
+export { setGarage }
