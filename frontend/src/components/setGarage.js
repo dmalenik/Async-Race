@@ -13,14 +13,15 @@ const setGarage = () => {
 
     name.innerText = 'Garage'
 
-    const items = document.createElement('p')
+    const carsTable = document.createElement('p')
 
-    items.classList.add('items-amount')
+    carsTable.classList.add('items-amount')
 
-    getFetch('http://127.0.0.1:3000/garage').then((data) => {
+  getFetch('http://127.0.0.1:3000/garage').then((data) => {
+        // create a table of cars with parameters name and color
         let str = JSON.stringify(data)
 
-        items.innerText = str
+        carsTable.innerText = str
     })
 
     const pages = document.createElement('p')
@@ -30,7 +31,7 @@ const setGarage = () => {
     pages.innerText = '122'
 
     garage.appendChild(name)
-    garage.appendChild(items)
+    garage.appendChild(carsTable)
     garage.appendChild(pages)
 
     return garage
