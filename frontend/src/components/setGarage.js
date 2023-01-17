@@ -1,3 +1,5 @@
+import getFetch from '../logic/getFetch.js'
+
 const setGarage = () => {
     const garage = document.createElement('section')
 
@@ -15,7 +17,11 @@ const setGarage = () => {
 
     items.classList.add('items-amount')
 
-    items.innerText = '133'
+    getFetch('http://127.0.0.1:3000/garage').then((data) => {
+        let str = JSON.stringify(data)
+
+        items.innerText = str
+    })
 
     const pages = document.createElement('p')
 
