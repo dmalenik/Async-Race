@@ -1,4 +1,14 @@
-import getFetch from '../logic/getFetch.js'
+import setGarageTable from './setGarageTable.js'
+/*
+    ** create a car --> input values, send data to the server (place beyond the table)
+    ** update a car --> get car, set new values, send data to the server (place near each car row)
+    ** delete a car --> get specific data from the server, remove it (place near each car row, but after the update car feature)
+    
+    ** after each operation
+    ** get arr objs
+    ** assign it to a global arr
+    ** assign to tbody the latest state of a global variable 
+*/
 
 const setGarage = () => {
     const garage = document.createElement('section')
@@ -13,16 +23,7 @@ const setGarage = () => {
 
     name.innerText = 'Garage'
 
-    const carsTable = document.createElement('p')
-
-    carsTable.classList.add('items-amount')
-
-  getFetch('http://127.0.0.1:3000/garage').then((data) => {
-        // create a table of cars with parameters name and color
-        let str = JSON.stringify(data)
-
-        carsTable.innerText = str
-    })
+    const carsTable = setGarageTable()
 
     const pages = document.createElement('p')
 
