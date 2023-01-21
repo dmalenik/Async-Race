@@ -5,8 +5,8 @@ const setGarageTable = () => {
 
     table.classList.add('items-amount')
 
-    const thead = document.createElement('thead')
-    const thead_row = document.createElement('tr')
+    const head = document.createElement('thead')
+    const head_row = document.createElement('tr')
     const name = document.createElement('th')
 
     name.innerText = 'name'
@@ -15,14 +15,14 @@ const setGarageTable = () => {
 
     color.innerText = 'color'
 
-    thead_row.appendChild(name)
-    thead_row.appendChild(color)
+    head_row.appendChild(name)
+    head_row.appendChild(color)
 
-    thead.appendChild(thead_row)
+    head.appendChild(head_row)
 
-    table.appendChild(thead)
+    table.appendChild(head)
 
-    const tbody = document.createElement('tbody')
+    const body = document.createElement('tbody')
 
     getFetch('http://127.0.0.1:3000/garage').then((data) => {
         data.map((obj) => {
@@ -38,11 +38,11 @@ const setGarageTable = () => {
             tr.appendChild(name)
             tr.appendChild(color)
 
-            tbody.appendChild(tr)
+            body.appendChild(tr)
         })
     })
 
-    table.appendChild(tbody)
+    table.appendChild(body)
 
     return table
 }
