@@ -1,6 +1,6 @@
-import setGarageTable from './setGarageTable.js'
+import { setGarageTable } from './index.js'
+import { setCar } from './index.js'
 /*
-    ** create a car --> input values, send data to the server (place beyond the table)
     ** update a car --> get car, set new values, send data to the server (place near each car row)
     ** delete a car --> get specific data from the server, remove it (place near each car row, but after the update car feature)
     
@@ -24,7 +24,7 @@ const setGarage = () => {
     name.innerText = 'Garage'
 
     const carsTable = setGarageTable()
-
+    const createCar = setCar()
     const pages = document.createElement('p')
 
     pages.classList.add('pages')
@@ -33,6 +33,7 @@ const setGarage = () => {
 
     garage.appendChild(name)
     garage.appendChild(carsTable)
+    garage.appendChild(createCar)
     garage.appendChild(pages)
 
     return garage

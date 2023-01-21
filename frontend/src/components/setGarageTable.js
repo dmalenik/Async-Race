@@ -47,4 +47,4 @@ const setGarageTable = () => {
     return table
 }
 
-export default setGarageTable
+export { setGarageTable }

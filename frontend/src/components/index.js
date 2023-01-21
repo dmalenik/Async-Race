@@ -1,3 +1,5 @@
 export { setGarage } from './setGarage.js'
 export { setWinners } from './setWinners.js'
 export { setViewToggler } from './setViewToggler.js'
+export { setGarageTable } from './setGarageTable.js'
+export { setCar } from './setCar.js'
