@@ -9,9 +9,9 @@ const { setGarage, setWinners, setViewToggler } = components
 
 // | SECTIONS
 
+document.querySelector('.container').appendChild(setViewToggler())
 document.querySelector('.container').appendChild(setGarage())
 document.querySelector('.container').appendChild(setWinners())
-document.querySelector('.container').appendChild(setViewToggler())
 
 // | STYLES
 
